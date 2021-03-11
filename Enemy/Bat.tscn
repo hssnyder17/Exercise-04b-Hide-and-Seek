@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Exercise-04b-Hide-and-Seek/Enemy/Bat.gd" type="Script" id=1]
-[ext_resource path="res://Exercise-04b-Hide-and-Seek/Assets/bat.png" type="Texture" id=2]
+[ext_resource path="res://Enemy/Bat.gd" type="Script" id=1]
+[ext_resource path="res://Assets/bat.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -49,4 +49,4 @@ shape = SubResource( 6 )
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
 enabled = true
-[connection signal="body_shape_entered" from="Area2D" to="." method="_on_Area2D_body_shape_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

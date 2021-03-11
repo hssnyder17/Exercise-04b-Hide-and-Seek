@@ -50,7 +50,7 @@ func _draw():
 			prev_point = p
 
 
-func _on_Area2D_body_shape_entered(body_id, body, body_shape, area_shape):
+func _on_Area2D_body_entered(body):
 	if body.name == 'Player':
 		body.die()
 		queue_free()
